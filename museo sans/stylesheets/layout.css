@@ -1,0 +1,239 @@
+body {
+    width: 1280px;
+    height: 9143px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    background-color: #2D491E;
+}
+h1, h2, h3, .h2number1, .h2number2, .h2number3, .h2number4, .h2number5, 
+.h2number6, .h2number7, .h2number8, .h2circle1, .infodescription p, 
+.h2circle2, .h2circle3, .h2circle4, .h2circle5, .h2circle6, .h2circle7, .h2circle8,
+.zero p, .eleven p {
+    color: #ABD765;
+}
+.who h3, h4, .navque p {
+    color: #2D491E;
+}
+h1, .navque p {
+    font-family: 'MuseoSansCyrl-700';
+}
+.h2number1, .h2number2, .h2number3, .h2number4, .h2number5, .h2number6,
+.h2number7, .h2number8, h2 {
+    font-family: 'MuseoSansCyrl-700Italic';
+    font-size: 40px;
+    line-height: 28px;
+    position: absolute;
+}
+.infoitem p, .infodescription p, h3, .zero p {
+    font-family: 'MuseoSansCyrl-900';
+}
+.eleven p {
+    font-family: 'MuseoSansCyrl-900Italic';
+}
+h4 {
+    font-family: 'MuseoSansCyrl-500Italic';
+}
+.h2circle1, .h2circle2, .h2circle3, .h2circle4, .h2circle5, .h2circle6, .h2circle7, .h2circle8 {
+    position: absolute;
+    font-size: 96px;
+    line-height: 67px;
+    font-family: 'MuseoSansCyrl-100';
+}
+.infoitem p, .degree0 p, .degree11 p {
+    font-family: 'MuseoSansCyrl-900Italic';
+    color: #2D491E;
+    /* Толщина и цвет обводки */
+    -webkit-text-stroke: 3px #ABD765;
+}
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+/* фон на обложке */
+.cover img {
+    height: 293px;
+    width: 891px;
+    margin-top: 198px;
+    margin-left: 194px;
+}
+
+/* название шрифта на обложке */
+h1 {
+    font-size: 200px;
+    margin-top: 0px;
+    margin-left: 90px;
+    line-height: 142px;
+}
+.about {
+    height: 693px;
+    position: relative;
+}
+.header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.h2circle1 {
+    left: 90px;
+    top: 160px;
+}
+.h2number1 {
+    left: 109px;
+    top: 188px;
+}
+.header1 h2 {
+    left: 165px;
+    top: 188px;
+}
+/* дизайнер, год, страна */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 230px;
+    padding-left: 90px;
+}
+.infoitem p {
+    font-size: 90px;
+    line-height: 64px;
+    margin-top: 60px;
+}
+.infodescription p {
+    font-size: 30px;
+    line-height: 21px;
+    margin-top: 20px;
+}
+/* навигационная панель справа */
+.navigation img {
+    margin-left: 785px;
+    margin-top: -565px;
+    position: absolute;
+}
+.arrow img {
+    position: absolute;
+    float: right;
+    right: 135px;
+    top: 767px;
+}
+.rectangle img {
+    position: relative;
+    float: right;
+    right: 406px;
+    top: 62px;
+}
+.navque p {
+    font-size: 30px;
+    line-height: 18px;
+    position: absolute;
+    left: 845px;
+    top: 238px;
+}
+.downarrow img {
+    left: 37px;
+    top: 1128px;
+}
+.leftarrow1 img {
+    position: absolute;
+    right: 128px;
+    top: 1275px;
+}
+.leftarrow2 img {
+    position: absolute;
+    right: 128px;
+    top: 1363px;
+}
+h3 {
+    font-size: 35px;
+    line-height: 25px;
+}
+.who h3 {
+    position: absolute;
+    left: 826px;
+    top: 277px;
+}
+h4 {
+    font-size: 25px;
+    line-height: 18px;
+    margin-top: 12px;
+}
+.h4 {
+    position: absolute;
+    left: 826px;
+    top: 336px;
+} 
+.when h3 {
+    position: absolute;
+    left: 826px;
+    top: 710px;
+}
+.where h3 {
+    position: absolute;
+    left: 826px;
+    top: 798px;
+} 
+
+/* угол наклона курсива */
+.header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.h2circle2 {
+    left: 387px;
+    top: 1646px;
+}
+.h2number2 {
+    left: 405px;
+    top: 1674px;
+}
+.header2 h2 {
+    left: 462px;
+    top: 1674px;
+}
+.zero, .eleven {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 226px;
+}
+.zero p, .eleven p {
+    font-size: 316px;
+    line-height: 226px;
+    margin-left: 90px;
+}
+.elka0, .elka11 {
+    margin-right: -5px;
+}
+.graph0 {
+    float: right;
+    margin-right: -48px;
+}
+.graph11 {
+    float: right;
+    margin-right: -67px;
+}
+.degree0 p, .degree11 p {
+    font-size: 45px;
+    line-height: 31px;
+}
+
+.zero {
+    margin-top: 465px;
+}
+.eleven {
+    margin-top: 64px;
+    margin-bottom: 160px;
+}
+.degree0 {
+    float: right;
+    right: 139px;
+    position: relative;
+}
+.degree11 {
+    float: right;
+    right: 159px;
+    position: relative;
+}
