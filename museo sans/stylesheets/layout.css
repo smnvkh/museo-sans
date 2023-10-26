@@ -9,13 +9,14 @@ body {
 h1, h2, h3, .h2number1, .h2number2, .h2number3, .h2number4, .h2number5, 
 .h2number6, .h2number7, .h2number8, .h2circle1, .infodescription p, 
 .h2circle2, .h2circle3, .h2circle4, .h2circle5, .h2circle6, .h2circle7, .h2circle8,
-.zero p, .eleven p {
+.zero p, .eleven p, .h-number, .b-number, .l-number, .free, .museosans, .geometric,
+.num, .leftnum, .rightnum {
     color: #ABD765;
 }
-.who h3, h4, .navque p {
+.who h3, h4, .infoitem p, .navque p, .h-text, .reversealphabet, .alphabet {
     color: #2D491E;
 }
-h1, .navque p {
+h1, .navque p, .h-number, .b-number, .l-number, .num {
     font-family: 'MuseoSansCyrl-700';
 }
 .h2number1, .h2number2, .h2number3, .h2number4, .h2number5, .h2number6,
@@ -25,7 +26,7 @@ h1, .navque p {
     line-height: 28px;
     position: absolute;
 }
-.infoitem p, .infodescription p, h3, .zero p {
+.infoitem p, .infodescription p, h3, .zero p, .museosans {
     font-family: 'MuseoSansCyrl-900';
 }
 .eleven p {
@@ -40,11 +41,20 @@ h4 {
     line-height: 67px;
     font-family: 'MuseoSansCyrl-100';
 }
-.infoitem p, .degree0 p, .degree11 p {
+.degree0 p, .degree11 p {
     font-family: 'MuseoSansCyrl-900Italic';
     color: #2D491E;
     /* Толщина и цвет обводки */
     -webkit-text-stroke: 3px #ABD765;
+}
+.h-text, .leftnum, .rightnum {
+    font-family: 'MuseoSansCyrl-500';
+}
+.free {
+    font-family: 'MuseoSansCyrl-300Italic';
+}
+.geometric {
+    font-family: 'MuseoSansCyrl-300';
 }
 .cover {
     display: flex;
@@ -99,6 +109,8 @@ h1 {
     font-size: 90px;
     line-height: 64px;
     margin-top: 60px;
+    /* Толщина и цвет обводки */
+     -webkit-text-stroke: 3px #ABD765;
 }
 .infodescription p {
     font-size: 30px;
@@ -112,10 +124,10 @@ h1 {
     position: absolute;
 }
 .arrow img {
-    position: absolute;
+    position: relative;
     float: right;
     right: 135px;
-    top: 767px;
+    top: 41px; 
 }
 .rectangle img {
     position: relative;
@@ -126,23 +138,24 @@ h1 {
 .navque p {
     font-size: 30px;
     line-height: 18px;
-    position: absolute;
-    left: 845px;
-    top: 238px;
+    position: relative;
+    float: right;
+    right: 421px;
+    bottom: 487px;
 }
 .downarrow img {
     left: 37px;
     top: 1128px;
 }
 .leftarrow1 img {
-    position: absolute;
-    right: 128px;
-    top: 1275px;
+    position: relative;
+    left: 325px;
+    bottom: 2px;
 }
 .leftarrow2 img {
-    position: absolute;
-    right: 128px;
-    top: 1363px;
+    position: relative;
+    left: 325px;
+    top: 70px;
 }
 h3 {
     font-size: 35px;
@@ -204,16 +217,25 @@ h4 {
     line-height: 226px;
     margin-left: 90px;
 }
-.elka0, .elka11 {
-    margin-right: -5px;
+.elka0 {
+    position: relative;
+    left: 25px;
+} 
+
+.elka11 {
+    position: relative;
+    left: 35px;
 }
 .graph0 {
+    position: relative;
     float: right;
-    margin-right: -48px;
+    left: 48px;
 }
 .graph11 {
+    position: relative;
     float: right;
-    margin-right: -67px;
+    left: 67px;
+    top: 2px;
 }
 .degree0 p, .degree11 p {
     font-size: 45px;
@@ -236,4 +258,231 @@ h4 {
     float: right;
     right: 159px;
     position: relative;
+}
+/* начертания */
+.header3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.h2circle3 {
+    right: 331px;
+    top: 2502px;
+}
+.h2number3 {
+    right: 349px;
+    top: 2530px;
+}
+.header3 h2 {
+    right: 90px;
+    top: 2530px;
+}
+.braceletes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1097px;
+    height: 375px;
+    margin-bottom: 260px;
+}
+.h-bracelet {
+    margin-top: 181px;
+    margin-left: 90px;
+}
+.h-numbertext {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.h-number {
+    position: relative;
+    font-size: 15px;
+    transform: rotate(-90deg);
+    bottom: 61px;
+    right: 24px;
+}
+.h-text {
+    font-size: 28px;
+    position: relative;
+    left: 155px;
+    bottom: 60px;
+}
+.b-bracelet {
+    margin-top: 26px;
+    margin-left: 90px;
+}
+.b-numbertext, .reversealphabet, .alphabet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.b-number {
+    position: relative;
+    font-size: 15px;
+    transform: rotate(90deg);
+    float: right;
+    bottom: 56px;
+    left: 120px;
+}
+.reversealphabet, .alphabet {
+    font-size: 28px;
+}
+.ya, .yu, .ae, .soft, .ii, .solid {
+    font-family: 'MuseoSansCyrl-900';
+}
+.tsh, .sh, .tch, .tz, .h, .f {
+    font-family: 'MuseoSansCyrl-700';
+}
+.u, .t, .s, .r, .p, .o, .n {
+    font-family: 'MuseoSansCyrl-500';
+}
+.m, .l, .k, .iy, .i, .z {
+    font-family: 'MuseoSansCyrl-300';
+}
+.j, .yo, .e, .d, .g, .v, .b, .a {
+    font-family: 'MuseoSansCyrl-100';
+}
+
+.reversealphabet {
+    width: 872px;
+    position: relative;
+    bottom: 62px;
+    left: 58px;
+}
+
+
+.l-bracelet {
+    margin-top: 26px;
+    margin-left: 90px;
+}
+
+.l-number {
+    position:relative;
+    font-size: 15px;
+    transform: rotate(-90deg);
+    bottom: 519px;
+    right: 490px;
+}
+
+
+.ya2, .yu2, .ae2, .soft2, .ii2, .solid2 {
+    font-family: 'MuseoSansCyrl-900Italic';
+}
+.tsh2, .sh2, .tch2, .tz2, .h2, .f2 {
+    font-family: 'MuseoSansCyrl-700Italic';
+}
+.u2, .t2, .s2, .r2, .p2, .o2, .n2 {
+    font-family: 'MuseoSansCyrl-500Italic';
+}
+.m2, .l2, .k2, .iy2, .i2, .z2 {
+    font-family: 'MuseoSansCyrl-300Italic';
+}
+.j2, .yo2, .e2, .d2, .g2, .v2, .b2, .a2 {
+    font-family: 'MuseoSansCyrl-100Italic';
+}
+
+.alphabet {
+    width: 872px;
+    position: relative;
+    bottom: 78px;
+    left: 170px;
+}
+
+/* ticket */
+.ticket {
+    margin-left: 90px;
+    position: absolute;
+}
+.ticketfilling {
+    display: flex;
+    flex-direction: row;
+    width: 954px;
+    height: 265px;
+}
+.museo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 673px;
+    height: 256px;
+    margin-left: 90px;
+}
+.free {
+    position: relative;
+    font-size: 70px;
+    bottom: 346px;
+    line-height: 49px;
+}
+.museosans {
+    position: relative;
+    font-size: 120px;
+    line-height: 86px;
+    bottom: 333px;
+}
+.geometric {
+    position: relative;
+    font-size: 35px;
+    line-height: 25px;
+    bottom: 250px;
+}
+.barcode {
+    display: flex;
+    flex-direction: row;
+    width: 128px;
+    height: 265px;
+    align-items: center;
+}
+.num {
+    font-size: 40px;
+    transform: rotate(-90deg);
+    position: relative;
+    left: 37px;
+    bottom: 352px;
+}
+.code {
+    display: flex;
+    flex-direction: column;
+    width: 21px;
+    height: 186px;
+}
+.leftnum, .rightnum {
+    font-size: 30px;
+    transform: rotate(-90deg);
+    position: relative;
+    left: 2px;
+}
+.leftnum {
+    bottom: 195px;
+}
+.rightnum {
+    bottom: 342px;
+}
+/* цифры */
+.trees {
+    width: 1071px;
+    height: 625px;
+    margin-left: 90px;
+    position: absolute;
+    top: 3839px;
+}
+.basketimg {
+    width: 330px;
+    height: 330px;
+    margin-left: 334px;
+    position: absolute;
+    top: 4416px;
+}
+/* .zooming {
+    position: relative;
+    margin-left: 666px;
+    bottom: 4301px;
+} */
+.player {
+    width: 1099px;
+    height: 1201px;
+    position: absolute;
+    margin-left: 90px;
+    bottom: 2793px;
 }
