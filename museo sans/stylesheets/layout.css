@@ -1,23 +1,20 @@
 body {
     width: 1280px;
-    height: 9018px;
+    height: 9112px;
     margin: 0 auto;
     position: relative;
     display: block;
     background-color: #2D491E;
 }
-h1, h2, h3, .h2number1, .h2number2, .h2number3, .h2number4, .h2number5, 
-.h2number6, .h2number7, .h2number8, .h2circle1, .infodescription p, 
-.h2circle2, .h2circle3, .h2circle4, .h2circle5, .h2circle6, .h2circle7, .h2circle8,
-.zero p, .eleven p, .h-number, .b-number, .l-number, .free, .museosans, .geometric,
-.num, .leftnum, .rightnum, .three, .eight, .seven, .one, .nine, .bignine,
-.xxx, .filling p {
+h1, h2, h3, .header1, .header2, .header3, .header4, .header5, .header6,
+.header7, .header8, .info, .italic, .h-number, .b-number, .l-number, 
+.ticket, .numbers, .nineteen, .twenty, .glyphs, .walk, .langs, .footer {
     color: #ABD765;
 }
-.who h3, h4, .infoitem p, .navque p, .h-text, .reversealphabet, .alphabet {
+.who h3, h4, .infoitem p, .navque p, .h-text, .reversealphabet, .alphabet, .leafs {
     color: #2D491E;
 }
-h1, .navque p, .h-number, .b-number, .l-number, .num {
+h1, .navque p, .h-number, .b-number, .l-number, .num, .column1, .column3 {
     font-family: 'MuseoSansCyrl-700';
 }
 .h2number1, .h2number2, .h2number3, .h2number4, .h2number5, .h2number6,
@@ -28,10 +25,10 @@ h1, .navque p, .h-number, .b-number, .l-number, .num {
     position: absolute;
 }
 .infoitem p, .infodescription p, h3, .zero p, .museosans, .nine,
-.bignine, .figure7, .figure8 {
+.bignine, .figure7, .figure8, .walk, .footer  {
     font-family: 'MuseoSansCyrl-900';
 }
-.eleven p {
+.eleven p, .figure6 {
     font-family: 'MuseoSansCyrl-900Italic';
 }
 h4, .one, .figure2, .figure9 {
@@ -43,13 +40,14 @@ h4, .one, .figure2, .figure9 {
     line-height: 67px;
     font-family: 'MuseoSansCyrl-100';
 }
-.degree0 p, .degree11 p, .figure6 {
+.degree0 p, .degree11 p {
     font-family: 'MuseoSansCyrl-900Italic';
     color: #2D491E;
     /* Толщина и цвет обводки */
     -webkit-text-stroke: 3px #ABD765;
 }
-.h-text, .leftnum, .rightnum, .figure3, .figure5, .figure3-3 {
+.h-text, .leftnum, .rightnum, .figure3, .figure5, .figure3-3, 
+.name, .timing, .buttons, .nineteen, .twenty {
     font-family: 'MuseoSansCyrl-500';
 }
 .free, .figure9-2 {
@@ -61,10 +59,10 @@ h4, .one, .figure2, .figure9 {
 .three {
     font-family: 'MuseoSansCyrl-100Italic';
 }
-.seven, .figure6-2, .figure7-2 {
+.seven, .figure6-2, .figure7-2, .leafs {
     font-family: 'MuseoSansCyrl-700Italic';
 }
-.xxx, .figure1, .figure4, .figure0 {
+.xxx, .figure1, .figure4, .figure0, .time, .artist, .column2, .column4 {
     font-family: 'MuseoSansCyrl-100';
 }
 .cover {
@@ -550,6 +548,7 @@ h4 {
     top: 4416px;
 }
 .xxx {
+    width: 56px;
     font-size: 80px;
     position: relative;
     left: 335px;
@@ -649,13 +648,164 @@ h4 {
     position: absolute;
 }
 
+/* глифы */
+
+.header5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.h2circle5 {
+    left: 90px;
+    bottom: 4043px;
+}
+.h2number5 {
+    left: 107px;
+    bottom: 4054px;
+}
+.header5 h2 {
+    left: 160px;
+    bottom: 4054px;
+}
 
 .player {
     width: 1099px;
     height: 1201px;
     position: absolute;
     margin-left: 90px;
-    bottom: 2793px;
+    bottom: 2762px;
+}
+.time {
+    position: relative;
+    font-size: 30px;
+    left: 59px;
+    bottom: 1143px;
+}
+.song {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.name {
+    width: 300px;
+    font-size: 35px;
+    position: relative;
+    left: 317px;
+    bottom: 1106px;
+}
+.artist {
+    width: 300px;
+    font-size: 35px;
+    position: relative;
+    left: 317px;
+    bottom: 1100px;
+}
+.timing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 499px;
+    height: 25px;
+}
+.start {
+    font-size: 30px;
+    position: relative;
+    right: 36px;
+    bottom: 903px;
+}
+.end {
+    font-size: 30px;
+    position: relative;
+    left: 149px;
+    bottom: 905px;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 105px;
+    height: 277px;
+}
+.menu {
+    font-size: 30px;
+    position: relative;
+    left: 361px;
+    top: 2015px;
+}
+.pause {
+    font-size: 30px;
+    position: relative;
+    left: 396px;
+    top: 2127px;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 297px;
+    height: 50px;
+}
+.next {
+    font-size: 50px;
+    position: relative;
+    left: 458px;
+    top: 1911px;
+}
+.back {
+    font-size: 50px;
+    position: relative;
+    left: 52px;
+    top: 1911px;
+}
+.arrowbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 113px;
+    height: 35px;
+}
+.leftcontroller {
+    font-size: 40px;
+    position: relative;
+    left: 658px;
+    top: 2298px;
+}
+.rightcontroller {
+    font-size: 40px;
+    position: relative;
+    left: 697px;
+    top: 2297px;
+}
+.leftheadphone {
+    font-size: 40px;
+    position: absolute;
+    left: 960px;
+    bottom: 3309px;
+}
+.rightheadphone {
+    font-size: 40px;
+    position: absolute;
+    left: 1149px;
+    bottom: 3482px;
+}
+/* алфавиты  */
+
+.header6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.h2circle6 {
+    left: 505px;
+    bottom: 2535px;
+}
+.h2number6 {
+    left: 520px;
+    bottom: 2546px;
+}
+.header6 h2 {
+    left: 580px;
+    bottom: 2546px;
 }
 .leafs {
     display: flex;
@@ -667,45 +817,428 @@ h4 {
 .leftleaf {
     position: relative;
     margin-left: 151px;
-    top: 2522px;
+    top: 2620px;
 }
+
 .centerleaf {
     position: relative;
     margin-left: 78px;
-    top: 2522px;
+    top: 2620px;
 }
 .rightleaf {
     position: relative;
     margin-left: 78px;
-    top: 2518px;
+    top: 2618px;
+} 
+.leafs p {
+    font-size: 40px;
+}
+
+/* кириллица */
+.ttcchh {
+    position: absolute;
+    left: 109px;
+    bottom: 391px;
+}
+.aaa {
+    position: absolute;
+    left: 93px;
+    bottom: 350px;
+}
+.fff {
+    position: absolute;
+    left: 136px;
+    bottom: 331px;
+}
+.aaee {
+    position: absolute;
+    left: 58px;
+    bottom: 274px;
+}
+.vvv {
+    position: absolute;
+    left: 102px;
+    bottom: 290px;
+}
+.vvv {
+    position: absolute;
+    left: 102px;
+    bottom: 290px;
+}
+.ddd {
+    position: absolute;
+    left: 145px;
+    bottom: 268px;
+}
+.iii {
+    position: absolute;
+    left: 183px;
+    bottom: 290px;
+}
+.jjj {
+    position: absolute;
+    left: 79px;
+    bottom: 236px;
+}
+.ggg {
+    position: absolute;
+    left: 136px;
+    bottom: 213px;
+}
+.ttt {
+    position: absolute;
+    left: 183px;
+    bottom: 231px;
+}
+.yyaa {
+    position: absolute;
+    left: 35px;
+    bottom: 161px;
+}
+.yiiy {
+    position: absolute;
+    left: 82px;
+    bottom: 185px;
+}
+.aaa2 {
+    position: absolute;
+    left: 136px;
+    bottom: 161px;
+}
+.bbb {
+    position: absolute;
+    left: 179px;
+    bottom: 175px;
+}
+.uuu {
+    position: absolute;
+    left: 236px;
+    bottom: 203px;
+}
+.kkk {
+    position: absolute;
+    left: 95px;
+    bottom: 125px;
+}
+.yyoo {
+    position: absolute;
+    left: 154px;
+    bottom: 118px;
+}
+.zzz {
+    position: absolute;
+    left: 203px;
+    bottom: 133px;
+}
+
+/* латиница */
+.dddd {
+    position: absolute;
+    left: 119px;
+    bottom: 391px;
+}
+.xxxx {
+    position: absolute;
+    left: 104px;
+    bottom: 336px;
+}
+.ffff {
+    position: absolute;
+    left: 166px;
+    bottom: 336px;
+}
+.rrrr {
+    position: absolute;
+    left: 71px;
+    bottom: 290px;
+}
+.hhhh {
+    position: absolute;
+    left: 119px;
+    bottom: 282px;
+}
+.wwww {
+    position: absolute;
+    left: 171px;
+    bottom: 288px;
+}
+.pppp {
+    position: absolute;
+    left: 35px;
+    bottom: 240px;
+}
+.gggg {
+    position: absolute;
+    left: 71px;
+    bottom: 213px;
+}
+.iiii {
+    position: absolute;
+    left: 115px;
+    bottom: 232px;
+}
+.ssss {
+    position: absolute;
+    left: 165px;
+    bottom: 236px;
+}
+.vvvv {
+    position: absolute;
+    left: 209px;
+    bottom: 246px;
+}
+.mmmm {
+    position: absolute;
+    left: 15px;
+    bottom: 171px;
+}
+.bbbb {
+    position: absolute;
+    left: 90px;
+    bottom: 161px;
+}
+.jjjj {
+    position: absolute;
+    left: 144px;
+    bottom: 175px;
+}
+.aaaa {
+    position: absolute;
+    left: 184px;
+    bottom: 175px;
+}
+.kkkk {
+    position: absolute;
+    left: 231px;
+    bottom: 185px;
+}
+.tttt {
+    position: absolute;
+    left: 60px;
+    bottom: 118px;
+}
+.uuuu {
+    position: absolute;
+    left: 115px;
+    bottom: 111px;
+}
+.yyyy {
+    position: absolute;
+    left: 168px;
+    bottom: 111px;
+}
+.oooo {
+    position: absolute;
+    left: 219px;
+    bottom: 133px;
+}
+
+/* греческий */
+
+.valya {
+    position: absolute;
+    left: 105px;
+    bottom: 388px;
+}
+.yura {
+    position: absolute;
+    left: 143px;
+    bottom: 363px;
+}
+.elena {
+    position: absolute;
+    left: 95px;
+    bottom: 337px;
+}
+.ilya {
+    position: absolute;
+    left: 69px;
+    bottom: 297px;
+}
+.sasha {
+    position: absolute;
+    left: 118px;
+    bottom: 293px;
+}
+.liza {
+    position: absolute;
+    left: 164px;
+    bottom: 305px;
+}
+.olya {
+    position: absolute;
+    left: 152px;
+    bottom: 258px;
+}
+.ulya {
+    position: absolute;
+    left: 48px;
+    bottom: 242px;
+}
+.polya {
+    position: absolute;
+    left: 101px;
+    bottom: 233px;
+}
+.ira {
+    position: absolute;
+    left: 203px;
+    bottom: 237px;
+}
+.masha {
+    position: absolute;
+    left: 157px;
+    bottom: 200px;
+}
+.sonya {
+    position: absolute;
+    left: 48px;
+    bottom: 186px;
+}
+.varya {
+    position: absolute;
+    left: 111px;
+    bottom: 171px;
+}
+.petya {
+    position: absolute;
+    left: 187px;
+    bottom: 172px;
+}
+.william {
+    position: absolute;
+    left: 74px;
+    bottom: 120px;
+}
+.galya {
+    position: absolute;
+    left: 156px;
+    bottom: 124px;
+}
+
+/* выносные элементы */
+
+.header7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.h2circle7 {
+    right: 510px;
+    bottom: 1763px;
+}
+.h2number7 {
+    right: 529px;
+    bottom: 1774px;
+}
+.header7 h2 {
+    right: 90px;
+    bottom: 1774px;
+}
+.twenty {
+    font-size: 16px;
+    position: absolute;
+    left: 1169px;
+    bottom: 1664px;
+}
+.nineteen {
+    font-size: 16px;
+    position: absolute;
+    left: 1169px;
+    bottom: 1598px;
 }
 .lines {
     width: 1099px;
     height: 85px;
     position: absolute;
     margin-left: 90px;
-    bottom: 1630px;
+    bottom: 1598px;
+}
+.walk {
+    font-size: 93px;
+    position: absolute;
+    left: 118px;
+    bottom: 1599px;
 }
 .shoes {
     width: 153px;
     height: 783px;
     position: absolute;
     left: 1037px;
-    bottom: 804px;
+    bottom: 772px;
 }
+/* языки */
+
+.header8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.h2circle8 {
+    left: 85px;
+    bottom: 1371px;
+}
+.h2number8 {
+    left: 102px;
+    bottom: 1382px;
+}
+.header8 h2 {
+    left: 160px;
+    bottom: 1382px;
+}
+
+.langs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 795px;
+    height: 517px;
+    font-size: 45px;
+}
+.langs p {
+    margin-top: 9px;
+}
+.column1 {
+    margin-left: 90px;
+    margin-top: 3302px;
+}
+
+.column2 {
+    margin-left: 80px;
+    margin-top: 3302px;
+}
+.column3 {
+    margin-left: 160px;
+    margin-top: 3302px;
+}
+.column4 {
+    margin-left: 80px;
+    margin-top: 3302px;
+}
+
 .forestfooter {
     width: 1100px;
     height: 424px;
     position: absolute;
     left: 90px;
-    bottom: 174px;
+    bottom: 216px;
 }
-.textfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: 174px;
-    background-color:#ABD765;
-    margin-top: 8844px;
+.marie {
+    font-size: 30px;
+    position: absolute;
+    left: 90px;
+    bottom: 98px;
 }
+.group {
+    font-size: 30px;
+    position: absolute;
+    left: 90px;
+    bottom: 62px;
+}
+.hse {
+    position: absolute;
+    left: 983px;
+    bottom: 53px;
+}
+
+
