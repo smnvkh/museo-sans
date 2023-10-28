@@ -50,7 +50,7 @@ h4, .one, .figure2, .figure9 {
 .name, .timing, .buttons, .nineteen, .twenty {
     font-family: 'MuseoSansCyrl-500';
 }
-.free, .figure9-2 {
+.free, .figure9-2, .rightleaf {
     font-family: 'MuseoSansCyrl-300Italic';
 }
 .geometric, .eight, .figure3-2 {
@@ -59,7 +59,7 @@ h4, .one, .figure2, .figure9 {
 .three {
     font-family: 'MuseoSansCyrl-100Italic';
 }
-.seven, .figure6-2, .figure7-2, .leafs {
+.seven, .figure6-2, .figure7-2, .leftleaf, .centerleaf {
     font-family: 'MuseoSansCyrl-700Italic';
 }
 .xxx, .figure1, .figure4, .figure0, .time, .artist, .column2, .column4 {
@@ -1037,8 +1037,8 @@ h4 {
 
 .valya {
     position: absolute;
-    left: 105px;
-    bottom: 388px;
+    left: 109px;
+    bottom: 382px;
 }
 .yura {
     position: absolute;
